@@ -1,18 +1,23 @@
 const routes = require('express').Router();
-const App = require("./App/main");
-const multer = require('multer')
 
-const upload = multer({
-  dest: 'tmp/',
+
+const UploadController = require('./controllers/Upload')
+
+const Uploader = UploadController.single('fileToUpload');
+
+routes.post('/upload', Uploader, (req, res) => {
+  
+  res.json({'success': true, 'url': 'http://localhost:8080/image/'+req.file.filename });
 
 })
 
-routes.post('/upload', upload.single('fileToUpload'), (req, res) => {
-  res.send(req.file)
-})
 
-routes.get('/image/:name', (req, res) => {
-  res.send(req.params.name)
+
+routes.get('/image/:name', (req, res) => { 
+  
+  const ImageController = require('./controllers/Image')
+  ImageController(req, res);
+
 })
 
 module.exports = routes;

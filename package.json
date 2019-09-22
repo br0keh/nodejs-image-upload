@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/br0keh/nodejs-image-upload/issues"
   },
-  "homepage": "https://github.com/br0keh/nodejs-image-upload#readme"
+  "homepage": "https://github.com/br0keh/nodejs-image-upload#readme",
+  "dependencies": {
+    "file-type": "^12.3.0",
+    "mime-types": "^2.1.24"
+  }
 }
