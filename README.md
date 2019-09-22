@@ -9,20 +9,9 @@ start server
 
     node index.js
 
-
-
-
-
-
-
-
-
-
-
 api test
 
-   
-
+```html
     <body>
 	    <form  action="https://localhost:8080/upload"  method="post"  enctype="multipart/form-data">
 	    Select image to upload:
@@ -30,4 +19,4 @@ api test
 		    <input  type="submit"  value="Upload Image"  name="submit">
 	    </form>
     </body>
-
+```
