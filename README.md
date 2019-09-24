@@ -1,7 +1,12 @@
 
-# nodejs-image-upload
+<h1> nodejs-image-upload</h1>
+
+
+![version 1](https://img.shields.io/badge/version-1-brightgreen.svg?style=flat)
+
 
 start server
+
 
     npm install express
     npm install morgan
@@ -11,18 +16,10 @@ start server
 
 
 
-
-
-
-
-
-
-
-
-api test
+<i>usage example</i>
 
    
-
+```html
     <body>
 	    <form  action="https://localhost:8080/upload"  method="post"  enctype="multipart/form-data">
 	    Select image to upload:
@@ -30,4 +27,4 @@ api test
 		    <input  type="submit"  value="Upload Image"  name="submit">
 	    </form>
     </body>
-
+```
