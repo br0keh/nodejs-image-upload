@@ -1,6 +1,4 @@
-
-const fs     = require('fs')
-const path = require('path');
+const fs = require('fs')
 const filetype = require('file-type')
 
 module.exports = (req, res) => {
