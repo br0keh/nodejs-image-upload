@@ -6,8 +6,14 @@ const UploadController = require('./controllers/Upload')
 const Uploader = UploadController.single('file');
 
 routes.post('/upload', Uploader, (req, res) => {
-  
-  res.json({'success': true, 'url': 'http://localhost:8080/image/'+req.file.filename });
+
+  res.json(
+    {
+     'success': true,
+     'url': 'http://localhost:8080/image/' + req.file.filename
+    }
+  );
+
 
 })
 
