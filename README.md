@@ -7,9 +7,7 @@
 
 <i>start server</i>
 
-    npm install express
-    npm install morgan
-    npm install multer
+    npm install
 
     node index.js
 
