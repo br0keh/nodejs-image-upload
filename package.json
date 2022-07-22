@@ -18,7 +18,7 @@
   "homepage": "https://github.com/br0keh/nodejs-image-upload#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "file-type": "^12.3.0",
+    "file-type": "^16.5.4",
     "mime-types": "^2.1.24"
   }
 }
